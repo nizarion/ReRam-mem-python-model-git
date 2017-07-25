@@ -187,7 +187,7 @@ for currentVal in CurrentSweep:
         temp = np.log10(abs(currentVal))
     
 #Switch Off 
-VoltSpacing = np.linspace(0,-maxVoltage,50)            #Use voltage sourcing to sweep from 0 to -1.0 V #VoltSpacing = np.linspace(0,-1.0,50)  
+VoltSpacing = np.linspace(0,-maxVoltage,50)            #Use voltage sourcing to sweep from 0 to -1.0 V #was VoltSpacing = np.linspace(0,-1.0,50)  
 VoltageSweep = VoltSpacing
 for val in reversed(VoltSpacing):
     VoltageSweep = np.hstack([VoltageSweep,val])        #Also weep from -1.1 V to 0 
